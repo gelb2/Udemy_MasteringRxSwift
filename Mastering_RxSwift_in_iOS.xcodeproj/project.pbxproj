@@ -53,6 +53,7 @@
 		4C761BC7275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastering_RxSwift_in_iOSUITests.swift; sourceTree = "<group>"; };
 		4C761BC9275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastering_RxSwift_in_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4CBC209B275E05FD00797717 /* Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4CFCBBC5275E08EA00715D55 /* Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6305230C7CFE44B18073F671 /* Pods-Mastering_RxSwift_in_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_RxSwift_in_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Mastering_RxSwift_in_iOS/Pods-Mastering_RxSwift_in_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BCCA751FB5E67D15DFBBF38F /* Pods_Mastering_RxSwift_in_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mastering_RxSwift_in_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +87,7 @@
 		4C5A7B65275B6E1F00FD24E7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				4CFCBBC5275E08EA00715D55 /* Replay Subject.playground */,
 				4CBC209B275E05FD00797717 /* Behavior Subject.playground */,
 				4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */,
 			);
