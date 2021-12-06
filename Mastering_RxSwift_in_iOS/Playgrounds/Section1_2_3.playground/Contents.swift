@@ -77,3 +77,25 @@ Observable<String>.create { observable in
 //subject : they are observable as well as observer
 //publish subject, behaviour subject, replay subject, behavirour relay, variable(Deprecated)
 //testtesttest
+
+let subject = PublishSubject<String>()
+
+/* publish subject */
+//not called
+subject.onNext("issue 1")
+
+subject.subscribe { event in
+    print("publish subject event \(event)")
+}
+
+//called. you have to emit event after subject is subscribed
+subject.onNext("issue 2")
+subject.onNext("issue 3")
+
+//subject.dispose()
+
+//if disposed called before onCompleted. completed event not called
+subject.onCompleted()
+
+//if disposed, onCompleted is called before onNext, onNext event not called
+subject.onNext("issue 4")
