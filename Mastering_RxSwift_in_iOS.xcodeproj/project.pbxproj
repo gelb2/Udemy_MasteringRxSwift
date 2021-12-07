@@ -52,6 +52,7 @@
 		4C761BC3275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mastering_RxSwift_in_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C761BC7275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastering_RxSwift_in_iOSUITests.swift; sourceTree = "<group>"; };
 		4C761BC9275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastering_RxSwift_in_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C9A19D3275E270A003D97E0 /* BehaviorRelay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BehaviorRelay.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4CBC209B275E05FD00797717 /* Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4CFCBBC5275E08EA00715D55 /* Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4CFCBBC6275E1F6000715D55 /* Variables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Variables.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -88,6 +89,7 @@
 		4C5A7B65275B6E1F00FD24E7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				4C9A19D3275E270A003D97E0 /* BehaviorRelay.playground */,
 				4CFCBBC6275E1F6000715D55 /* Variables.playground */,
 				4CFCBBC5275E08EA00715D55 /* Replay Subject.playground */,
 				4CBC209B275E05FD00797717 /* Behavior Subject.playground */,
