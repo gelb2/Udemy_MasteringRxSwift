@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */; };
+		4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */; };
 		4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */; };
 		4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */; };
 		4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BAA275B6BEF002D10B1 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		30C1B1F9631BEA8C1F4F674E /* Pods-Mastering_RxSwift_in_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; path = "Target Support Files/Pods-Mastering_RxSwift_in_iOS/Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C761BA3275B6BEF002D10B1 /* Mastering_RxSwift_in_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastering_RxSwift_in_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */,
 				4C761BAA275B6BEF002D10B1 /* ViewController.swift */,
 				4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */,
+				4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */,
 				4C761BAC275B6BEF002D10B1 /* Main.storyboard */,
 				4C761BAF275B6BF0002D10B1 /* Assets.xcassets */,
 				4C761BB1275B6BF0002D10B1 /* LaunchScreen.storyboard */,
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */,
+				4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */,
 				4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */,
 				4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */,
 				4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */,
