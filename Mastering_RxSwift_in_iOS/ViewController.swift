@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var photoImageView: UIImageView!
     
+    @IBOutlet weak var applyFilterButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +31,25 @@ class ViewController: UIViewController {
                     return
                 }
         photoCollectionViewController.selectedPhoto.subscribe(onNext: { [weak self] photo in
-            self?.photoImageView.image = photo
+            DispatchQueue.main.async {
+                self?.updateUI(with: photo)
+            }
         })
             .disposed(by: disposeBag)
+    }
+    
+    private func updateUI(with image: UIImage) {
+        photoImageView.image = image
+        applyFilterButton.isHidden = false
+    }
+    
+    @IBAction func applyFilterImage() {
+        guard let sourceImage = photoImageView.image else { return }
+        FilterService().applyFilter(image: sourceImage) { [weak self] image in
+            DispatchQueue.main.async {
+                self?.photoImageView.image = image
+            }
+        }
     }
 
 
