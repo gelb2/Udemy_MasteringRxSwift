@@ -26,16 +26,20 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let navC = segue.destination as? UINavigationController
-                , let photoCollectionViewController = navC.viewControllers.first as? PhotoCollectionViewController else {
-                    return
+        if segue.identifier == "CameraFilter" {
+            guard let navC = segue.destination as? UINavigationController
+                    , let photoCollectionViewController = navC.viewControllers.first as? PhotoCollectionViewController else {
+                        return
+                    }
+            photoCollectionViewController.selectedPhoto.subscribe(onNext: { [weak self] photo in
+                DispatchQueue.main.async {
+                    self?.updateUI(with: photo)
                 }
-        photoCollectionViewController.selectedPhoto.subscribe(onNext: { [weak self] photo in
-            DispatchQueue.main.async {
-                self?.updateUI(with: photo)
-            }
-        })
-            .disposed(by: disposeBag)
+            })
+                .disposed(by: disposeBag)
+        } else if segue.identifier == "TodoList" {
+            
+        }
     }
     
     private func updateUI(with image: UIImage) {
