@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */; };
+		4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */; };
 		4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */; };
 		4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */; };
 		4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BAA275B6BEF002D10B1 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		4C761BBE275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BBD275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSTests.swift */; };
 		4C761BC8275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BC7275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITests.swift */; };
 		4C761BCA275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BC9275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift */; };
+		4CDF88BD2768B9B40082009F /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF88BC2768B9B40082009F /* FilterService.swift */; };
 		75731F5BEC52716C302A368C /* Pods_Mastering_RxSwift_in_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCA751FB5E67D15DFBBF38F /* Pods_Mastering_RxSwift_in_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		30C1B1F9631BEA8C1F4F674E /* Pods-Mastering_RxSwift_in_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; path = "Target Support Files/Pods-Mastering_RxSwift_in_iOS/Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C761BA3275B6BEF002D10B1 /* Mastering_RxSwift_in_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastering_RxSwift_in_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 		4C761BC9275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastering_RxSwift_in_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C9A19D3275E270A003D97E0 /* BehaviorRelay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BehaviorRelay.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4CBC209B275E05FD00797717 /* Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4CDF88BC2768B9B40082009F /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		4CFCBBC5275E08EA00715D55 /* Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4CFCBBC6275E1F6000715D55 /* Variables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Variables.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6305230C7CFE44B18073F671 /* Pods-Mastering_RxSwift_in_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_RxSwift_in_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Mastering_RxSwift_in_iOS/Pods-Mastering_RxSwift_in_iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +132,10 @@
 				4C5A7B65275B6E1F00FD24E7 /* Playgrounds */,
 				4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */,
 				4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */,
+				4CDF88BC2768B9B40082009F /* FilterService.swift */,
 				4C761BAA275B6BEF002D10B1 /* ViewController.swift */,
+				4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */,
+				4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */,
 				4C761BAC275B6BEF002D10B1 /* Main.storyboard */,
 				4C761BAF275B6BF0002D10B1 /* Assets.xcassets */,
 				4C761BB1275B6BF0002D10B1 /* LaunchScreen.storyboard */,
@@ -345,8 +354,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */,
+				4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */,
 				4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */,
+				4CDF88BD2768B9B40082009F /* FilterService.swift in Sources */,
 				4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */,
+				4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
