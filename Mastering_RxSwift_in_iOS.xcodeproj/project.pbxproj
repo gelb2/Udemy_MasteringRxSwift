@@ -46,6 +46,7 @@
 		36A00CFD27691E3000C444A8 /* Section5-Filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Filter.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFE2769203C00C444A8 /* Section5-Skip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Skip.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFF2769215800C444A8 /* Section5-SkipWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-SkipWhile.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00D002769231F00C444A8 /* Section5-SkipUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-SkipUntil.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -100,6 +101,7 @@
 		4C5A7B65275B6E1F00FD24E7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				36A00D002769231F00C444A8 /* Section5-SkipUntil.playground */,
 				36A00CFF2769215800C444A8 /* Section5-SkipWhile.playground */,
 				36A00CFE2769203C00C444A8 /* Section5-Skip.playground */,
 				36A00CFD27691E3000C444A8 /* Section5-Filter.playground */,
