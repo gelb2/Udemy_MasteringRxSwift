@@ -41,6 +41,15 @@
 
 /* Begin PBXFileReference section */
 		30C1B1F9631BEA8C1F4F674E /* Pods-Mastering_RxSwift_in_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; path = "Target Support Files/Pods-Mastering_RxSwift_in_iOS/Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		36123F132768EBF900AFF44A /* Section5-Ignore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Ignore.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36123F142768EEF000AFF44A /* Section5-ElementAt.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-ElementAt.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00CFD27691E3000C444A8 /* Section5-Filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Filter.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00CFE2769203C00C444A8 /* Section5-Skip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Skip.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00CFF2769215800C444A8 /* Section5-SkipWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-SkipWhile.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00D002769231F00C444A8 /* Section5-SkipUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-SkipUntil.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00D01276926F600C444A8 /* Section5-Take.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Take.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00D022769281600C444A8 /* Section5-TakeWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-TakeWhile.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00D03276929E900C444A8 /* Section5-TakeUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-TakeUntil.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -95,6 +104,15 @@
 		4C5A7B65275B6E1F00FD24E7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				36A00D03276929E900C444A8 /* Section5-TakeUntil.playground */,
+				36A00D022769281600C444A8 /* Section5-TakeWhile.playground */,
+				36A00D01276926F600C444A8 /* Section5-Take.playground */,
+				36A00D002769231F00C444A8 /* Section5-SkipUntil.playground */,
+				36A00CFF2769215800C444A8 /* Section5-SkipWhile.playground */,
+				36A00CFE2769203C00C444A8 /* Section5-Skip.playground */,
+				36A00CFD27691E3000C444A8 /* Section5-Filter.playground */,
+				36123F142768EEF000AFF44A /* Section5-ElementAt.playground */,
+				36123F132768EBF900AFF44A /* Section5-Ignore.playground */,
 				4C9A19D3275E270A003D97E0 /* BehaviorRelay.playground */,
 				4CFCBBC6275E1F6000715D55 /* Variables.playground */,
 				4CFCBBC5275E08EA00715D55 /* Replay Subject.playground */,
