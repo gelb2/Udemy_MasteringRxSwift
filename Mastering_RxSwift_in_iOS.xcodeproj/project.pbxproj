@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A00D0627692E3900C444A8 /* TodoList.storyboard */; };
 		36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A00D0827692E9000C444A8 /* TaskListViewController.swift */; };
+		4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */; };
 		4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */; };
 		4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */; };
 		4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 		36A00D03276929E900C444A8 /* Section5-TakeUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-TakeUntil.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00D0627692E3900C444A8 /* TodoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
 		36A00D0827692E9000C444A8 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -122,6 +124,7 @@
 			children = (
 				36A00D0827692E9000C444A8 /* TaskListViewController.swift */,
 				36A00D0627692E3900C444A8 /* TodoList.storyboard */,
+				4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */,
 			);
 			path = Section6;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */,
+				4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */,
 				4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */,
 				4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */,
 				4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */,

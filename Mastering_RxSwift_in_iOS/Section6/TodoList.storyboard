@@ -58,6 +58,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="U8w-QP-ooO">
                         <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Tws-RO-Djc">
+                            <connections>
+                                <segue destination="0sN-0G-38m" kind="presentation" id="G1X-fb-koW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="prioritySegmentedControl" destination="UFq-0Q-rIK" id="hxr-0c-ZUw"/>
@@ -67,6 +72,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X75-7y-gPC">
+            <objects>
+                <navigationController id="0sN-0G-38m" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LlV-Wf-UMi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tvR-t2-c81">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qkl-bI-zEJ" kind="relationship" relationship="rootViewController" id="W5p-mW-rwL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4b-tH-6Mr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="115"/>
+        </scene>
+        <!--Add Task View Controller-->
+        <scene sceneID="t2V-Jt-dxr">
+            <objects>
+                <viewController id="Qkl-bI-zEJ" customClass="AddTaskViewController" customModule="Mastering_RxSwift_in_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBy-TE-c0b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="o5M-N3-Czf">
+                                <rect key="frame" x="16" y="72" width="382" height="32"/>
+                                <segments>
+                                    <segment title="High"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Low"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Raq-x7-DLh">
+                                <rect key="frame" x="16" y="432" width="382" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dzC-6k-sQO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Raq-x7-DLh" firstAttribute="centerY" secondItem="dzC-6k-sQO" secondAttribute="centerY" id="8D7-vm-9W1"/>
+                            <constraint firstItem="o5M-N3-Czf" firstAttribute="top" secondItem="dzC-6k-sQO" secondAttribute="top" constant="16" id="XPR-I0-mNB"/>
+                            <constraint firstItem="dzC-6k-sQO" firstAttribute="trailing" secondItem="o5M-N3-Czf" secondAttribute="trailing" constant="16" id="b4d-nH-6pu"/>
+                            <constraint firstItem="Raq-x7-DLh" firstAttribute="leading" secondItem="dzC-6k-sQO" secondAttribute="leading" constant="16" id="rNz-Ug-7Dc"/>
+                            <constraint firstItem="o5M-N3-Czf" firstAttribute="leading" secondItem="dzC-6k-sQO" secondAttribute="leading" constant="16" id="rrv-hq-Itx"/>
+                            <constraint firstItem="dzC-6k-sQO" firstAttribute="trailing" secondItem="Raq-x7-DLh" secondAttribute="trailing" constant="16" id="w8V-kZ-G8A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OcE-hx-kNV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ay9-Kq-hNE"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6n-Zs-fWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="155"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="joi-yj-FeD">
@@ -86,6 +151,12 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
