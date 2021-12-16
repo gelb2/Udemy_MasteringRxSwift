@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A00D0627692E3900C444A8 /* TodoList.storyboard */; };
+		36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A00D0827692E9000C444A8 /* TaskListViewController.swift */; };
+		4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */; };
+		4C1D6CC1276AFE8500B425D7 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CC0276AFE8500B425D7 /* Tasks.swift */; };
+		4C1D6CC3276B0F6800B425D7 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CC2276B0F6800B425D7 /* TaskCell.swift */; };
 		4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */; };
 		4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */; };
 		4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */; };
@@ -50,6 +55,11 @@
 		36A00D01276926F600C444A8 /* Section5-Take.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Take.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00D022769281600C444A8 /* Section5-TakeWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-TakeWhile.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00D03276929E900C444A8 /* Section5-TakeUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-TakeUntil.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36A00D0627692E3900C444A8 /* TodoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
+		36A00D0827692E9000C444A8 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		4C1D6CC0276AFE8500B425D7 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		4C1D6CC2276B0F6800B425D7 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -101,6 +111,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36A00D0427692DFB00C444A8 /* Section4 */ = {
+			isa = PBXGroup;
+			children = (
+				4CDF88BC2768B9B40082009F /* FilterService.swift */,
+				4C761BAA275B6BEF002D10B1 /* ViewController.swift */,
+				4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */,
+				4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */,
+				4C761BAC275B6BEF002D10B1 /* Main.storyboard */,
+			);
+			path = Section4;
+			sourceTree = "<group>";
+		};
+		36A00D0527692E1000C444A8 /* Section6 */ = {
+			isa = PBXGroup;
+			children = (
+				36A00D0827692E9000C444A8 /* TaskListViewController.swift */,
+				36A00D0627692E3900C444A8 /* TodoList.storyboard */,
+				4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */,
+				4C1D6CC2276B0F6800B425D7 /* TaskCell.swift */,
+				4C1D6CC0276AFE8500B425D7 /* Tasks.swift */,
+			);
+			path = Section6;
+			sourceTree = "<group>";
+		};
 		4C5A7B65275B6E1F00FD24E7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,11 +184,8 @@
 				4C5A7B65275B6E1F00FD24E7 /* Playgrounds */,
 				4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */,
 				4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */,
-				4CDF88BC2768B9B40082009F /* FilterService.swift */,
-				4C761BAA275B6BEF002D10B1 /* ViewController.swift */,
-				4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */,
-				4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */,
-				4C761BAC275B6BEF002D10B1 /* Main.storyboard */,
+				36A00D0427692DFB00C444A8 /* Section4 */,
+				36A00D0527692E1000C444A8 /* Section6 */,
 				4C761BAF275B6BF0002D10B1 /* Assets.xcassets */,
 				4C761BB1275B6BF0002D10B1 /* LaunchScreen.storyboard */,
 				4C761BB4275B6BF0002D10B1 /* Info.plist */,
@@ -302,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */,
 				4C761BB3275B6BF0002D10B1 /* LaunchScreen.storyboard in Resources */,
 				4C761BB0275B6BF0002D10B1 /* Assets.xcassets in Resources */,
 				4C761BAE275B6BEF002D10B1 /* Main.storyboard in Resources */,
@@ -371,8 +403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */,
+				4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */,
 				4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */,
 				4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */,
+				4C1D6CC3276B0F6800B425D7 /* TaskCell.swift in Sources */,
+				4C1D6CC1276AFE8500B425D7 /* Tasks.swift in Sources */,
 				4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */,
 				4CDF88BD2768B9B40082009F /* FilterService.swift in Sources */,
 				4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */,
