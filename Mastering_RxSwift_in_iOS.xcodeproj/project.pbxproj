@@ -57,6 +57,7 @@
 		36A00D03276929E900C444A8 /* Section5-TakeUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-TakeUntil.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00D0627692E3900C444A8 /* TodoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
 		36A00D0827692E9000C444A8 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		4C06CCC7276B457700187E37 /* ToArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ToArray.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		4C1D6CC0276AFE8500B425D7 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		4C1D6CC2276B0F6800B425D7 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
@@ -135,9 +136,18 @@
 			path = Section6;
 			sourceTree = "<group>";
 		};
+		4C06CCC6276B455400187E37 /* Section7 */ = {
+			isa = PBXGroup;
+			children = (
+				4C06CCC7276B457700187E37 /* ToArray.playground */,
+			);
+			path = Section7;
+			sourceTree = "<group>";
+		};
 		4C5A7B65275B6E1F00FD24E7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				4C06CCC6276B455400187E37 /* Section7 */,
 				36A00D03276929E900C444A8 /* Section5-TakeUntil.playground */,
 				36A00D022769281600C444A8 /* Section5-TakeWhile.playground */,
 				36A00D01276926F600C444A8 /* Section5-Take.playground */,
