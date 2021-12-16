@@ -126,8 +126,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OcE-hx-kNV">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ay9-Kq-hNE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ay9-Kq-hNE">
+                            <connections>
+                                <action selector="save" destination="Qkl-bI-zEJ" id="1jK-3z-5bc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="prioritySegmentedControl" destination="o5M-N3-Czf" id="B9K-Ra-qWf"/>
+                        <outlet property="titleTextField" destination="Raq-x7-DLh" id="AIq-Dm-2o2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6n-Zs-fWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
