@@ -13,6 +13,12 @@ class AddTaskViewController: UIViewController {
     
     @IBOutlet weak var prioritySegmentedControl: UISegmentedControl!
     @IBOutlet weak var titleTextField: UITextField!
+    
+    private let taskSubject: PublishSubject<Tasks> = PublishSubject<Tasks>()
+    
+    var taskSubjectObservable: Observable<Tasks> {
+        return taskSubject.asObservable()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +33,8 @@ class AddTaskViewController: UIViewController {
         }
         
         let task = Tasks(title: textInput, priority: priority)
-        
-        
+        taskSubject.onNext(task)
+        self.dismiss(animated: true, completion: nil)
     }
 
 }

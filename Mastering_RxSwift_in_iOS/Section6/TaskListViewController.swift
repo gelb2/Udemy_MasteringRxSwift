@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import RxSwift
 
 class TaskListViewController: UIViewController {
     
     @IBOutlet weak var prioritySegmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
+    
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,16 @@ class TaskListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let navC = segue.destination as? UINavigationController,
+              let addTaskVC = navC.viewControllers.first as? AddTaskViewController else {
+                  return
+              }
+        addTaskVC.taskSubjectObservable.subscribe(onNext: { task in
+            print(task)
+        }).disposed(by: disposeBag)
+    }
 
 }
 
