@@ -25,6 +25,11 @@ class TaskListViewController: UIViewController {
         
         self.title = "Task list"
         self.navigationItem.title = "My Task List"
+        
+        
+        tableView.estimatedRowHeight = 45
+        tableView.rowHeight = UITableView.automaticDimension
+
         // Do any additional setup after loading the view.
     }
     
@@ -58,18 +63,27 @@ class TaskListViewController: UIViewController {
     }
     
     @IBAction func priorityChanged(segmentedControl: UISegmentedControl) {
-        
+        let priority = Priority(rawValue: segmentedControl.selectedSegmentIndex - 1)
+        filterTask(priority: priority)
     }
     
     private func filterTask(priority: Priority?) {
         if priority == nil {
             self.filteredTasks = self.tasks.value
+            self.updateTableView()
         } else {
             self.tasks.map { tasks in
                 return tasks.filter { task in return task.priority == priority! }
             }.subscribe(onNext: { [weak self] tasks in
                 self?.filteredTasks = tasks
+                self?.updateTableView()
             }).disposed(by: disposeBag)
+        }
+    }
+    
+    private func updateTableView() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
         }
     }
 
@@ -80,17 +94,18 @@ extension TaskListViewController: UITableViewDelegate {
 }
 
 extension TaskListViewController: UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.filteredTasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell", for: indexPath)
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell", for: indexPath) as? TaskCell else { fatalError() }
+        cell.taskName.text = self.filteredTasks[indexPath.row].title
         return cell
     }
 }

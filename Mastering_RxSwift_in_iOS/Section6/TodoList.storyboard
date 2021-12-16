@@ -32,13 +32,30 @@
                                 <rect key="frame" x="0.0" y="151" width="414" height="711"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TaskTableViewCell" id="Xyd-dW-T9P">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TaskTableViewCell" id="Xyd-dW-T9P" customClass="TaskCell" customModule="Mastering_RxSwift_in_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="53.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xyd-dW-T9P" id="XsM-V3-vmn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="53.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP0-yt-UhP">
+                                                    <rect key="frame" x="16" y="16" width="382" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CP0-yt-UhP" firstAttribute="leading" secondItem="XsM-V3-vmn" secondAttribute="leading" constant="16" id="6Ah-kX-yO0"/>
+                                                <constraint firstAttribute="bottom" secondItem="CP0-yt-UhP" secondAttribute="bottom" constant="16" id="6eF-x8-XbT"/>
+                                                <constraint firstItem="CP0-yt-UhP" firstAttribute="top" secondItem="XsM-V3-vmn" secondAttribute="top" constant="16" id="NHv-R7-eZ9"/>
+                                                <constraint firstAttribute="trailing" secondItem="CP0-yt-UhP" secondAttribute="trailing" constant="16" id="uFH-uS-pTW"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskName" destination="CP0-yt-UhP" id="OJl-c1-ra7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
