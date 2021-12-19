@@ -21,15 +21,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.prefersLargeTitles = false
         
         //NavigationItem, BarButtonItem Color
         self.navigationController?.navigationBar.tintColor = .red
         
-        self.navigationController?.navigationBar.barTintColor = .white
-        
+        self.navigationController?.navigationBar.barTintColor = .yellow
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.view.backgroundColor = .red
         //NavigationController Background Color
         self.navigationController?.navigationBar.backgroundColor = .blue
+        
         // Do any additional setup after loading the view.
     }
     
@@ -52,7 +54,6 @@ class ViewController: UIViewController {
     
     private func updateUI(with image: UIImage) {
         photoImageView.image = image
-        applyFilterButton.isHidden = false
     }
     
     @IBAction func applyFilterImage() {
