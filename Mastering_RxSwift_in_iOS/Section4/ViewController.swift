@@ -22,6 +22,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        //NavigationItem, BarButtonItem Color
+        self.navigationController?.navigationBar.tintColor = .red
+        
+        self.navigationController?.navigationBar.barTintColor = .white
+        
+        //NavigationController Background Color
+        self.navigationController?.navigationBar.backgroundColor = .blue
         // Do any additional setup after loading the view.
     }
     
