@@ -66,6 +66,7 @@
 		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4C6AE3C9276ED89900C67853 /* FlatmapLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlatmapLatest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C761BA3275B6BEF002D10B1 /* Mastering_RxSwift_in_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastering_RxSwift_in_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 		4C06CCC6276B455400187E37 /* Section7 */ = {
 			isa = PBXGroup;
 			children = (
+				4C6AE3C9276ED89900C67853 /* FlatmapLatest.playground */,
 				4C06CCC9276B49AA00187E37 /* FlatMap.playground */,
 				4C06CCC8276B47D900187E37 /* Map.playground */,
 				4C06CCC7276B457700187E37 /* ToArray.playground */,
