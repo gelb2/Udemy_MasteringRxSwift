@@ -32,12 +32,10 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.view.backgroundColor = .red
         
-        //NavigationController Background Color
-//        /rgb(162, 155, 254)
-        
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.yellow]
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.yellow]
         
+        //NavigationController Background Color
         self.navigationController?.navigationBar.backgroundColor = UIColor(red: 162 / 255, green: 155 / 255, blue: 254 / 255, alpha: 1.0)
         
         // Do any additional setup after loading the view.

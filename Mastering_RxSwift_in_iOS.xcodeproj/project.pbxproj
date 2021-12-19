@@ -13,6 +13,8 @@
 		4C1D6CC1276AFE8500B425D7 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CC0276AFE8500B425D7 /* Tasks.swift */; };
 		4C1D6CC3276B0F6800B425D7 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CC2276B0F6800B425D7 /* TaskCell.swift */; };
 		4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */; };
+		4C2D32D6276F2528004E84CF /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2D32D5276F2528004E84CF /* News.storyboard */; };
+		4C2D32D8276F2560004E84CF /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2D32D7276F2560004E84CF /* NewsTableViewController.swift */; };
 		4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */; };
 		4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */; };
 		4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */; };
@@ -64,6 +66,8 @@
 		4C1D6CC0276AFE8500B425D7 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		4C1D6CC2276B0F6800B425D7 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		4C242BAE275F5A3500ECAB6D /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		4C2D32D5276F2528004E84CF /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		4C2D32D7276F2560004E84CF /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		4C53865A276878F600CA75F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C5A7B64275B6E1200FD24E7 /* Section1_2_3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Section1_2_3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4C6AE3C9276ED89900C67853 /* FlatmapLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlatmapLatest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -150,6 +154,15 @@
 			path = Section7;
 			sourceTree = "<group>";
 		};
+		4C2D32D4276F24DD004E84CF /* Section8 */ = {
+			isa = PBXGroup;
+			children = (
+				4C2D32D5276F2528004E84CF /* News.storyboard */,
+				4C2D32D7276F2560004E84CF /* NewsTableViewController.swift */,
+			);
+			path = Section8;
+			sourceTree = "<group>";
+		};
 		4C5A7B65275B6E1F00FD24E7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +213,7 @@
 				4C5A7B65275B6E1F00FD24E7 /* Playgrounds */,
 				4C761BA6275B6BEF002D10B1 /* AppDelegate.swift */,
 				4C761BA8275B6BEF002D10B1 /* SceneDelegate.swift */,
+				4C2D32D4276F24DD004E84CF /* Section8 */,
 				36A00D0427692DFB00C444A8 /* Section4 */,
 				36A00D0527692E1000C444A8 /* Section6 */,
 				4C761BAF275B6BF0002D10B1 /* Assets.xcassets */,
@@ -351,6 +365,7 @@
 			files = (
 				36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */,
 				4C761BB3275B6BF0002D10B1 /* LaunchScreen.storyboard in Resources */,
+				4C2D32D6276F2528004E84CF /* News.storyboard in Resources */,
 				4C761BB0275B6BF0002D10B1 /* Assets.xcassets in Resources */,
 				4C761BAE275B6BEF002D10B1 /* Main.storyboard in Resources */,
 			);
@@ -423,6 +438,7 @@
 				4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */,
 				4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */,
 				4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */,
+				4C2D32D8276F2560004E84CF /* NewsTableViewController.swift in Sources */,
 				4C1D6CC3276B0F6800B425D7 /* TaskCell.swift in Sources */,
 				4C1D6CC1276AFE8500B425D7 /* Tasks.swift in Sources */,
 				4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */,
