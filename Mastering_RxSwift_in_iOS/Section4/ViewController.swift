@@ -21,16 +21,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         
         //NavigationItem, BarButtonItem Color
         self.navigationController?.navigationBar.tintColor = .red
         
+        //이건 왜 안되지...
         self.navigationController?.navigationBar.barTintColor = .yellow
+        
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.view.backgroundColor = .red
+        
         //NavigationController Background Color
-        self.navigationController?.navigationBar.backgroundColor = .blue
+//        /rgb(162, 155, 254)
+        
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.yellow]
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.yellow]
+        
+        self.navigationController?.navigationBar.backgroundColor = UIColor(red: 162 / 255, green: 155 / 255, blue: 254 / 255, alpha: 1.0)
         
         // Do any additional setup after loading the view.
     }
