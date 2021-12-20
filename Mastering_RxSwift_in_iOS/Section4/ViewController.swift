@@ -22,6 +22,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        //NavigationItem, BarButtonItem Color
+        self.navigationController?.navigationBar.tintColor = .red
+        
+        //이건 왜 안되지...
+        self.navigationController?.navigationBar.barTintColor = .yellow
+        
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.view.backgroundColor = .red
+        
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.yellow]
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.yellow]
+        
+        //NavigationController Background Color
+        self.navigationController?.navigationBar.backgroundColor = UIColor(red: 162 / 255, green: 155 / 255, blue: 254 / 255, alpha: 1.0)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,7 +60,6 @@ class ViewController: UIViewController {
     
     private func updateUI(with image: UIImage) {
         photoImageView.image = image
-        applyFilterButton.isHidden = false
     }
     
     @IBAction func applyFilterImage() {
