@@ -25,6 +25,8 @@
 		4C761BBE275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BBD275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSTests.swift */; };
 		4C761BC8275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BC7275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITests.swift */; };
 		4C761BCA275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C761BC9275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift */; };
+		4CD47C1C27704F5B00804252 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD47C1B27704F5B00804252 /* Article.swift */; };
+		4CD47C1E277055D100804252 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD47C1D277055D100804252 /* ArticleCell.swift */; };
 		4CDF88BD2768B9B40082009F /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF88BC2768B9B40082009F /* FilterService.swift */; };
 		75731F5BEC52716C302A368C /* Pods_Mastering_RxSwift_in_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCA751FB5E67D15DFBBF38F /* Pods_Mastering_RxSwift_in_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +88,8 @@
 		4C761BC9275B6BF0002D10B1 /* Mastering_RxSwift_in_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mastering_RxSwift_in_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C9A19D3275E270A003D97E0 /* BehaviorRelay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BehaviorRelay.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4CBC209B275E05FD00797717 /* Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4CD47C1B27704F5B00804252 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		4CD47C1D277055D100804252 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		4CDF88BC2768B9B40082009F /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		4CFCBBC5275E08EA00715D55 /* Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4CFCBBC6275E1F6000715D55 /* Variables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Variables.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -159,6 +163,8 @@
 			children = (
 				4C2D32D5276F2528004E84CF /* News.storyboard */,
 				4C2D32D7276F2560004E84CF /* NewsTableViewController.swift */,
+				4CD47C1D277055D100804252 /* ArticleCell.swift */,
+				4CD47C1B27704F5B00804252 /* Article.swift */,
 			);
 			path = Section8;
 			sourceTree = "<group>";
@@ -441,7 +447,9 @@
 				4C2D32D8276F2560004E84CF /* NewsTableViewController.swift in Sources */,
 				4C1D6CC3276B0F6800B425D7 /* TaskCell.swift in Sources */,
 				4C1D6CC1276AFE8500B425D7 /* Tasks.swift in Sources */,
+				4CD47C1E277055D100804252 /* ArticleCell.swift in Sources */,
 				4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */,
+				4CD47C1C27704F5B00804252 /* Article.swift in Sources */,
 				4CDF88BD2768B9B40082009F /* FilterService.swift in Sources */,
 				4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */,
 				4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */,
@@ -627,6 +635,8 @@
 				DEVELOPMENT_TEAM = PDF8XXXYH9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mastering_RxSwift_in_iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Requesting photo lib\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -656,6 +666,8 @@
 				DEVELOPMENT_TEAM = PDF8XXXYH9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mastering_RxSwift_in_iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Requesting photo lib\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
