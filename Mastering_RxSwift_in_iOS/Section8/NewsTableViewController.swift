@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class NewsTableViewController: UITableViewController {
+    
+    private let newsURLString = "https://newsapi.org/v2/top-headlines?country=us&apiKey=cd1d5fbfb7be4a46bfc824991225619c"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +27,23 @@ class NewsTableViewController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.orange]
         
         self.navigationController?.navigationBar.backgroundColor = .red
+    }
+    
+    private func populateNews() {
+        let url = URL(string: newsURLString)!
+        Observable.just(url)
+            .flatMap { url -> Observable<Data> in
+                let request = URLRequest(url: url)
+                return URLSession.shared.rx.data(request: request)
+            }.map { data -> [Article] in
+                return try? JSONDecoder().decode(ArticleList.self, from: data).articles
+            }.subscribe(onNext: { [weak self] articles in
+                if let articles = articles {
+                    DispatchQueue.main.async {
+                        self?.tableView.reloadData()
+                    }
+                }
+            })
     }
 
     // MARK: - Table view data source
