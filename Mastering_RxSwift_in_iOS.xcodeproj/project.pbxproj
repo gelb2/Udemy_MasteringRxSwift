@@ -194,10 +194,10 @@
 		369D0AFE27731E45004967EC /* Section12 */ = {
 			isa = PBXGroup;
 			children = (
+				369D0B0A27732572004967EC /* Cells */,
 				369D0B0727732349004967EC /* ViewModel */,
 				369D0AFF27731EA2004967EC /* MVVMNews.storyboard */,
 				369D0B0127731EF6004967EC /* MVVMNewsTableViewController.swift */,
-				369D0B0327732010004967EC /* MVVMArticleCell.swift */,
 				369D0B05277320A7004967EC /* MVVMArticle.swift */,
 			);
 			path = Section12;
@@ -209,6 +209,14 @@
 				369D0B0827732357004967EC /* ArticleViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		369D0B0A27732572004967EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				369D0B0327732010004967EC /* MVVMArticleCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		36A00D0427692DFB00C444A8 /* Section4 */ = {
