@@ -10,6 +10,7 @@
 		36176E4D2772055800FB8EE9 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36176E4C2772055800FB8EE9 /* Weather.storyboard */; };
 		369D0AF72772EDA1004967EC /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0AF62772EDA1004967EC /* WeatherViewController.swift */; };
 		369D0AFA2772F9D8004967EC /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0AF92772F9D8004967EC /* WeatherResult.swift */; };
+		369D0AFD2772FEE4004967EC /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0AFC2772FEE4004967EC /* URL+Extensions.swift */; };
 		36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A00D0627692E3900C444A8 /* TodoList.storyboard */; };
 		36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A00D0827692E9000C444A8 /* TaskListViewController.swift */; };
 		4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */; };
@@ -60,6 +61,7 @@
 		36815A422771A4FF00BD2428 /* StartsWith.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StartsWith.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		369D0AF62772EDA1004967EC /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		369D0AF92772F9D8004967EC /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
+		369D0AFC2772FEE4004967EC /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		36A00CFD27691E3000C444A8 /* Section5-Filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Filter.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFE2769203C00C444A8 /* Section5-Skip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Skip.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFF2769215800C444A8 /* Section5-SkipWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-SkipWhile.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -141,6 +143,7 @@
 		36176E4B2772052800FB8EE9 /* Section10 */ = {
 			isa = PBXGroup;
 			children = (
+				369D0AFB2772FED2004967EC /* Extensions */,
 				369D0AF82772F9CA004967EC /* Models */,
 				36176E4C2772055800FB8EE9 /* Weather.storyboard */,
 				369D0AF62772EDA1004967EC /* WeatherViewController.swift */,
@@ -168,6 +171,14 @@
 				369D0AF92772F9D8004967EC /* WeatherResult.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		369D0AFB2772FED2004967EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				369D0AFC2772FEE4004967EC /* URL+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		36A00D0427692DFB00C444A8 /* Section4 */ = {
@@ -499,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369D0AFD2772FEE4004967EC /* URL+Extensions.swift in Sources */,
 				36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */,
 				369D0AF72772EDA1004967EC /* WeatherViewController.swift in Sources */,
 				4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */,
