@@ -60,6 +60,7 @@ class WeatherViewController: UIViewController {
         //참고 : https://eunjin3786.tistory.com/91
         self.cityNameTextField.rx.text.orEmpty
             .distinctUntilChanged()
+            .throttle(1.0, latest: false, scheduler: MainScheduler.instance)
             .subscribe(onNext: {
             print($0)
         }).disposed(by: disposeBag)
