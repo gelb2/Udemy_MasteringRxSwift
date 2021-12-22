@@ -19,6 +19,21 @@ extension WeatherResult {
 }
 
 struct Weather: Decodable {
+    
+    enum CodingKeys: String, CodingKey {
+        case ondo = "temp"
+        case supdo = "humidity"
+    }
+    
     let temp: Double
     let humidity: Double
+}
+
+extension Weather {
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        temp = try container.decode(Double.self, forKey: .ondo)
+        humidity = try container.decode(Double.self, forKey: .supdo)
+    }
 }
