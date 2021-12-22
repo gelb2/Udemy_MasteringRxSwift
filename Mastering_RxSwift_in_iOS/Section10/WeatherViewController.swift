@@ -75,14 +75,19 @@ class WeatherViewController: UIViewController {
               let url = URL.urlForWeatherAPI(city: cityEncoded) else {
                   return
               }
+        
         let resource = Resource<WeatherResult>(url: url)
-        URLRequest.load(resource: resource)
-            .observeOn(MainScheduler.instance) //Making Sure event is observed on Main Thread, not background Thread
+        
+        let search = URLRequest.load(resource: resource)
+            .observeOn(MainScheduler.instance)
             .catchErrorJustReturn(WeatherResult.empty)
-            .subscribe(onNext: { [weak self] value in
-                let weather = value?.main
-                self?.displayWeather(weather)
-            })
+        
+        search.map {  "\($0?.main.temp ?? 0.0) F" }
+            .bind(to: self.temperatureLabel.rx.text)
+            .disposed(by: disposeBag)
+        
+        search.map { "\($0?.main.humidity ?? 0.0) H" }
+            .bind(to: self.humidityLabel.rx.text)
             .disposed(by: disposeBag)
     }
     
