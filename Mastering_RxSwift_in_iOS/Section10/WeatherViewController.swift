@@ -39,11 +39,17 @@ class WeatherViewController: UIViewController {
         
         humidityLabel.textColor = .lightGray
         humidityLabel.font = UIFont.systemFont(ofSize: 12, weight: .light)
+        
+        cityNameTextField.returnKeyType = .search
     }
     
     private func bind() {
-        self.cityNameTextField.rx.value
-            .subscribe(onNext: { city in
+        
+        self.cityNameTextField.rx.controlEvent(.editingDidEndOnExit)
+            .asObservable()
+            .map { [weak self] in
+                self?.cityNameTextField.text
+            }.subscribe(onNext: { city in
                 if let city = city {
                     if city.isEmpty {
                         self.displayWeather(nil)
