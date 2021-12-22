@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36176E4D2772055800FB8EE9 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36176E4C2772055800FB8EE9 /* Weather.storyboard */; };
+		369D0AF72772EDA1004967EC /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0AF62772EDA1004967EC /* WeatherViewController.swift */; };
 		36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A00D0627692E3900C444A8 /* TodoList.storyboard */; };
 		36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A00D0827692E9000C444A8 /* TaskListViewController.swift */; };
 		4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */; };
@@ -53,7 +55,9 @@
 		30C1B1F9631BEA8C1F4F674E /* Pods-Mastering_RxSwift_in_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; path = "Target Support Files/Pods-Mastering_RxSwift_in_iOS/Pods-Mastering_RxSwift_in_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		36123F132768EBF900AFF44A /* Section5-Ignore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Ignore.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36123F142768EEF000AFF44A /* Section5-ElementAt.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-ElementAt.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		36176E4C2772055800FB8EE9 /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
 		36815A422771A4FF00BD2428 /* StartsWith.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StartsWith.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		369D0AF62772EDA1004967EC /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		36A00CFD27691E3000C444A8 /* Section5-Filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Filter.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFE2769203C00C444A8 /* Section5-Skip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Skip.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFF2769215800C444A8 /* Section5-SkipWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-SkipWhile.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -132,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36176E4B2772052800FB8EE9 /* Section10 */ = {
+			isa = PBXGroup;
+			children = (
+				36176E4C2772055800FB8EE9 /* Weather.storyboard */,
+				369D0AF62772EDA1004967EC /* WeatherViewController.swift */,
+			);
+			path = Section10;
+			sourceTree = "<group>";
+		};
 		36815A412771A4C500BD2428 /* Section9 */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +260,7 @@
 				4C2D32D4276F24DD004E84CF /* Section8 */,
 				36A00D0427692DFB00C444A8 /* Section4 */,
 				36A00D0527692E1000C444A8 /* Section6 */,
+				36176E4B2772052800FB8EE9 /* Section10 */,
 				4C761BAF275B6BF0002D10B1 /* Assets.xcassets */,
 				4C761BB1275B6BF0002D10B1 /* LaunchScreen.storyboard */,
 				4C761BB4275B6BF0002D10B1 /* Info.plist */,
@@ -403,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */,
+				36176E4D2772055800FB8EE9 /* Weather.storyboard in Resources */,
 				4C761BB3275B6BF0002D10B1 /* LaunchScreen.storyboard in Resources */,
 				4C2D32D6276F2528004E84CF /* News.storyboard in Resources */,
 				4C761BB0275B6BF0002D10B1 /* Assets.xcassets in Resources */,
@@ -474,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */,
+				369D0AF72772EDA1004967EC /* WeatherViewController.swift in Sources */,
 				4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */,
 				4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */,
 				4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */,
