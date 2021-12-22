@@ -11,6 +11,10 @@
 		369D0AF72772EDA1004967EC /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0AF62772EDA1004967EC /* WeatherViewController.swift */; };
 		369D0AFA2772F9D8004967EC /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0AF92772F9D8004967EC /* WeatherResult.swift */; };
 		369D0AFD2772FEE4004967EC /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0AFC2772FEE4004967EC /* URL+Extensions.swift */; };
+		369D0B0027731EA2004967EC /* MVVMNews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369D0AFF27731EA2004967EC /* MVVMNews.storyboard */; };
+		369D0B0227731EF6004967EC /* MVVMNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0B0127731EF6004967EC /* MVVMNewsTableViewController.swift */; };
+		369D0B0427732010004967EC /* MVVMArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0B0327732010004967EC /* MVVMArticleCell.swift */; };
+		369D0B06277320A7004967EC /* MVVMArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D0B05277320A7004967EC /* MVVMArticle.swift */; };
 		36A00D0727692E3900C444A8 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A00D0627692E3900C444A8 /* TodoList.storyboard */; };
 		36A00D0927692E9000C444A8 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A00D0827692E9000C444A8 /* TaskListViewController.swift */; };
 		4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D6CBE276AFC2D00B425D7 /* AddTaskViewController.swift */; };
@@ -62,6 +66,10 @@
 		369D0AF62772EDA1004967EC /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		369D0AF92772F9D8004967EC /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 		369D0AFC2772FEE4004967EC /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		369D0AFF27731EA2004967EC /* MVVMNews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMNews.storyboard; sourceTree = "<group>"; };
+		369D0B0127731EF6004967EC /* MVVMNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMNewsTableViewController.swift; sourceTree = "<group>"; };
+		369D0B0327732010004967EC /* MVVMArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArticleCell.swift; sourceTree = "<group>"; };
+		369D0B05277320A7004967EC /* MVVMArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArticle.swift; sourceTree = "<group>"; };
 		36A00CFD27691E3000C444A8 /* Section5-Filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Filter.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFE2769203C00C444A8 /* Section5-Skip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-Skip.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		36A00CFF2769215800C444A8 /* Section5-SkipWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Section5-SkipWhile.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -181,6 +189,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		369D0AFE27731E45004967EC /* Section12 */ = {
+			isa = PBXGroup;
+			children = (
+				369D0AFF27731EA2004967EC /* MVVMNews.storyboard */,
+				369D0B0127731EF6004967EC /* MVVMNewsTableViewController.swift */,
+				369D0B0327732010004967EC /* MVVMArticleCell.swift */,
+				369D0B05277320A7004967EC /* MVVMArticle.swift */,
+			);
+			path = Section12;
+			sourceTree = "<group>";
+		};
 		36A00D0427692DFB00C444A8 /* Section4 */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +302,7 @@
 				36A00D0427692DFB00C444A8 /* Section4 */,
 				36A00D0527692E1000C444A8 /* Section6 */,
 				36176E4B2772052800FB8EE9 /* Section10 */,
+				369D0AFE27731E45004967EC /* Section12 */,
 				4C761BAF275B6BF0002D10B1 /* Assets.xcassets */,
 				4C761BB1275B6BF0002D10B1 /* LaunchScreen.storyboard */,
 				4C761BB4275B6BF0002D10B1 /* Info.plist */,
@@ -443,6 +463,7 @@
 				4C761BB3275B6BF0002D10B1 /* LaunchScreen.storyboard in Resources */,
 				4C2D32D6276F2528004E84CF /* News.storyboard in Resources */,
 				4C761BB0275B6BF0002D10B1 /* Assets.xcassets in Resources */,
+				369D0B0027731EA2004967EC /* MVVMNews.storyboard in Resources */,
 				4C761BAE275B6BEF002D10B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +537,7 @@
 				4C1D6CBF276AFC2D00B425D7 /* AddTaskViewController.swift in Sources */,
 				4C761BAB275B6BEF002D10B1 /* ViewController.swift in Sources */,
 				4C53865B276878F600CA75F0 /* PhotoCollectionViewCell.swift in Sources */,
+				369D0B0227731EF6004967EC /* MVVMNewsTableViewController.swift in Sources */,
 				4C2D32D8276F2560004E84CF /* NewsTableViewController.swift in Sources */,
 				4C1D6CC3276B0F6800B425D7 /* TaskCell.swift in Sources */,
 				4C1D6CC1276AFE8500B425D7 /* Tasks.swift in Sources */,
@@ -523,9 +545,11 @@
 				4C761BA7275B6BEF002D10B1 /* AppDelegate.swift in Sources */,
 				4CD47C1C27704F5B00804252 /* Article.swift in Sources */,
 				4CDF88BD2768B9B40082009F /* FilterService.swift in Sources */,
+				369D0B0427732010004967EC /* MVVMArticleCell.swift in Sources */,
 				4CD47C212770628500804252 /* URLRequest+Extensions.swift in Sources */,
 				369D0AFA2772F9D8004967EC /* WeatherResult.swift in Sources */,
 				4C761BA9275B6BEF002D10B1 /* SceneDelegate.swift in Sources */,
+				369D0B06277320A7004967EC /* MVVMArticle.swift in Sources */,
 				4C242BAF275F5A3500ECAB6D /* PhotoCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
