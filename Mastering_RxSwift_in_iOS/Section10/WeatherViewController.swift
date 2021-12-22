@@ -57,10 +57,10 @@ class WeatherViewController: UIViewController {
          */
         //이거 왜 키보드 내려갈때 연속으로 호출될까? 좀 이상하지 않음?
         //만약 텍스트 입력 받고, 버튼 누를 필요 없이 자동으로 검색되는 기능 만들려면 클남...
-        //참고 : https://eunjin3786.tistory.com/91
         self.cityNameTextField.rx.text.orEmpty
             .distinctUntilChanged()
-            .throttle(1.0, latest: false, scheduler: MainScheduler.instance)
+            .throttle(1.0, latest: true, scheduler: MainScheduler.instance)
+            .debounce(1.0, scheduler: MainScheduler.instance)
             .subscribe(onNext: {
             print($0)
         }).disposed(by: disposeBag)
